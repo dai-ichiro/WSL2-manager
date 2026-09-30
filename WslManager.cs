@@ -12,10 +12,12 @@ namespace WinForm
 
         public static void Start(bool showTerminal = false)
         {
+            string command = showTerminal ? $"{StartupCommand}; exec bash" : StartupCommand;
+
             var psi = new ProcessStartInfo
             {
                 FileName = "wsl.exe",
-                Arguments = $"-d {DistroName} -- bash -lc \"{StartupCommand}\"",
+                Arguments = $"-d {DistroName} -- bash -lc \"{command}\"",
                 UseShellExecute = false,
                 CreateNoWindow = !showTerminal,
             };
