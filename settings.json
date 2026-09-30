@@ -1,0 +1,4 @@
+{
+  "DistroName": "Ubuntu-26.04",
+  "StartupScript": "~/sample.sh"
+}
