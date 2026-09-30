@@ -62,6 +62,7 @@ namespace WinForm
             _isBusy = true;
             btnStart.Enabled = false;
             btnStop.Enabled = false;
+            chkShowTerminal.Enabled = false;
 
             try
             {
@@ -93,6 +94,7 @@ namespace WinForm
                 {
                     btnStart.Enabled = !running;
                     btnStop.Enabled = running;
+                    chkShowTerminal.Enabled = !running;
                 }
             }
             catch (Exception)

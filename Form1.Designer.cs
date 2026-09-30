@@ -51,7 +51,7 @@ namespace WinForm
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblStatus.ForeColor = System.Drawing.Color.Gray;
-            this.lblStatus.Location = new System.Drawing.Point(100, 25);
+            this.lblStatus.Location = new System.Drawing.Point(96, 25);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(70, 17);
             this.lblStatus.TabIndex = 1;
@@ -60,7 +60,7 @@ namespace WinForm
             // chkShowTerminal
             //
             this.chkShowTerminal.AutoSize = true;
-            this.chkShowTerminal.Location = new System.Drawing.Point(200, 25);
+            this.chkShowTerminal.Location = new System.Drawing.Point(240, 25);
             this.chkShowTerminal.Name = "chkShowTerminal";
             this.chkShowTerminal.Size = new System.Drawing.Size(110, 19);
             this.chkShowTerminal.TabIndex = 2;
@@ -71,7 +71,7 @@ namespace WinForm
             //
             this.btnStart.Location = new System.Drawing.Point(24, 64);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(160, 40);
+            this.btnStart.Size = new System.Drawing.Size(170, 40);
             this.btnStart.TabIndex = 3;
             this.btnStart.Text = "起動 (Start)";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -79,9 +79,9 @@ namespace WinForm
             //
             // btnStop
             //
-            this.btnStop.Location = new System.Drawing.Point(200, 64);
+            this.btnStop.Location = new System.Drawing.Point(214, 64);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(160, 40);
+            this.btnStop.Size = new System.Drawing.Size(170, 40);
             this.btnStop.TabIndex = 4;
             this.btnStop.Text = "停止 (Stop)";
             this.btnStop.UseVisualStyleBackColor = true;
@@ -97,7 +97,7 @@ namespace WinForm
             //
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 128);
+            this.ClientSize = new System.Drawing.Size(408, 128);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.chkShowTerminal);
