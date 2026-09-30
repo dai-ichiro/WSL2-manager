@@ -106,7 +106,7 @@ namespace WinForm
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "WSL Controller (llamacpp)";
+            this.Text = "WSL Controller";
             this.ResumeLayout(false);
             this.PerformLayout();
         }
