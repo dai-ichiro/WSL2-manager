@@ -31,6 +31,7 @@ namespace WinForm
             this.components = new System.ComponentModel.Container();
             this.lblStatusTitle = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.chkShowTerminal = new System.Windows.Forms.CheckBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.timerStatus = new System.Windows.Forms.Timer(this.components);
@@ -56,12 +57,22 @@ namespace WinForm
             this.lblStatus.TabIndex = 1;
             this.lblStatus.Text = "確認中...";
             //
+            // chkShowTerminal
+            //
+            this.chkShowTerminal.AutoSize = true;
+            this.chkShowTerminal.Location = new System.Drawing.Point(200, 25);
+            this.chkShowTerminal.Name = "chkShowTerminal";
+            this.chkShowTerminal.Size = new System.Drawing.Size(110, 19);
+            this.chkShowTerminal.TabIndex = 2;
+            this.chkShowTerminal.Text = "ターミナルの表示";
+            this.chkShowTerminal.UseVisualStyleBackColor = true;
+            //
             // btnStart
             //
             this.btnStart.Location = new System.Drawing.Point(24, 64);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(160, 40);
-            this.btnStart.TabIndex = 2;
+            this.btnStart.TabIndex = 3;
             this.btnStart.Text = "起動 (Start)";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
@@ -71,7 +82,7 @@ namespace WinForm
             this.btnStop.Location = new System.Drawing.Point(200, 64);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(160, 40);
-            this.btnStop.TabIndex = 3;
+            this.btnStop.TabIndex = 4;
             this.btnStop.Text = "停止 (Stop)";
             this.btnStop.UseVisualStyleBackColor = true;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
@@ -89,6 +100,7 @@ namespace WinForm
             this.ClientSize = new System.Drawing.Size(384, 128);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.chkShowTerminal);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.lblStatusTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -103,6 +115,7 @@ namespace WinForm
 
         private System.Windows.Forms.Label lblStatusTitle;
         private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.CheckBox chkShowTerminal;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Timer timerStatus;

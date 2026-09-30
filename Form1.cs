@@ -48,7 +48,8 @@ namespace WinForm
 
         private async void btnStart_Click(object sender, EventArgs e)
         {
-            await RunBusyAsync(WslManager.Start);
+            bool showTerminal = chkShowTerminal.Checked;
+            await RunBusyAsync(() => WslManager.Start(showTerminal));
         }
 
         private async void btnStop_Click(object sender, EventArgs e)

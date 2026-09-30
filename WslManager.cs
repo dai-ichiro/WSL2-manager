@@ -10,14 +10,14 @@ namespace WinForm
         private static string DistroName => AppSettings.Current.DistroName;
         private static string StartupCommand => AppSettings.Current.StartupScript;
 
-        public static void Start()
+        public static void Start(bool showTerminal = false)
         {
             var psi = new ProcessStartInfo
             {
                 FileName = "wsl.exe",
                 Arguments = $"-d {DistroName} -- bash -lc \"{StartupCommand}\"",
                 UseShellExecute = false,
-                CreateNoWindow = true,
+                CreateNoWindow = !showTerminal,
             };
 
             Process.Start(psi);
