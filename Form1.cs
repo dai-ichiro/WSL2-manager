@@ -35,7 +35,7 @@ namespace WinForm
         {
             if (AppSettings.Current != null && !string.IsNullOrEmpty(AppSettings.Current.DistroName))
             {
-                lblStatusTitle.Text = $"{AppSettings.Current.DistroName} 状態:";
+                this.Text = AppSettings.Current.DistroName;
             }
             await RefreshStatusAsync();
         }
