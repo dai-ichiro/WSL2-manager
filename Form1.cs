@@ -33,6 +33,10 @@ namespace WinForm
 
         private async void Form1_Load(object sender, EventArgs e)
         {
+            if (AppSettings.Current != null && !string.IsNullOrEmpty(AppSettings.Current.DistroName))
+            {
+                this.Text = AppSettings.Current.DistroName;
+            }
             await RefreshStatusAsync();
         }
 
